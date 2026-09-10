@@ -976,6 +976,9 @@ h1{
 .overflow{
   overflow: hidden;
 }
+.slider__brand-wrap .swiper-button-next, .slider__brand-wrap .swiper-button-prev{
+    display: none;
+  }
 @media (hover: hover){
   .header__choose, .header__cat, .footer__subscribe-link, .footer__social-link, .footer__download, .footer__download-txt{
     transition: 0.4s ease-in-out;
