@@ -976,6 +976,20 @@ h1{
 .overflow{
   overflow: hidden;
 }
+@media (hover: hover){
+  .header__choose, .header__cat, .footer__subscribe-link, .footer__social-link, .footer__download, .footer__download-txt{
+    transition: 0.4s ease-in-out;
+  }
+  .header__choose:hover, .header__cat:hover, .footer__subscribe-link:hover, .footer__social-link:hover{
+    background: #709C84;
+  } 
+  .footer__download:hover{
+    background: #5B846E;
+  }  
+  .footer__download:hover .footer__download-txt{
+    color: #fff;
+  }
+}
 @media (min-width: 768px){
   .header__btn{
     max-width: 168px;
@@ -1369,18 +1383,4 @@ h1{
     position: relative;
     padding-left: 16px;
   } 
-}
-@media (hover: hover){
-  .header__choose, .header__cat, .footer__subscribe-link, .footer__social-link, .footer__download, .footer__download-txt{
-    transition: 0.4s ease-in-out;
-  }
-  .header__choose:hover, .header__cat:hover, .footer__subscribe-link:hover, .footer__social-link:hover{
-    background: #709C84;
-  } 
-  .footer__download:hover{
-    background: #5B846E;
-  }  
-  .footer__download:hover .footer__download-txt{
-    color: #fff;
-  }
 }
