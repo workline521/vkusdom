@@ -13,40 +13,429 @@
 		<link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap" rel="stylesheet">
 		<link href="assets/css/layout.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">		
+		<link rel="icon" type="image/x-icon" href="assets/img/logo-mobile.svg">		
 	</head>
 	<body>
 
 		<!-- header -->
-		<header>
-			<button class="header__burger" aria-controls="primary-menu" aria-expanded="false">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-					<g clip-path="url(#clip0_2001_28)">
-					<path d="M3.75 12H20.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-					<path d="M3.75 6H20.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-					<path d="M3.75 18H20.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-					</g>
-					<defs>
-					<clipPath id="clip0_2001_28">
-					<rect width="24" height="24" fill="white"/>
-					</clipPath>
-					</defs>
-				</svg>             
-            </button>
+		<header class="header">
+			<div class="header__top">
+				<a href="/" class="header__logo"></a>
+				<div class="header__form-wrapper">
+					<a href="#" class="header__cat">
+						<span class="header__cat-icon"></span>
+						<span class="header__cat-txt">Каталог</span>
+					</a>
+					<form action="#" class="header__form">
+						<input class="header__form-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+						<button type="submit" class="header__submit"></button>
+					</form>
+				</div>
+				<div class="header__dropdown-wrapper">
+					<button type="button" class="header__choose">
+						<span class="header__choose-icon"></span> 
+						<span class="header__choose-txt">Укажите способ получения</span>
+					</button>					
+				</div>
+				<div class="header__nav">
+					<a href="# " class="header__fav">
+						<span>1</span>
+					</a>
+					<a href="#" class="header__cart"></a>
+					<a href="#" class="header__user"></a>
+				</div>				
+			</div>
+			<div class="header__menu">
+				<a href="#" class="header__cat-mobile">
+					<span class="header__cat-icon"></span>
+					<span class="header__cat-txt">Каталог</span>
+				</a>
+				<div class="header__nav-mobile">
+					<a href="# " class="header__fav">
+						<span>1</span>
+					</a>
+					<a href="#" class="header__cart"></a>
+					<a href="#" class="header__user"></a>
+				</div>
+				<div class="header__select">
+					<button type="button" class="header__left"></button>
+					<div class="header__links">
+						<a href="#" class="header__link">Акции</a>
+						<a href="#" class="header__link">Хиты продаж</a>
+						<a href="#" class="header__link">Новинки</a>
+						<a href="#" class="header__link">Сделано в Чеченской Республике</a>
+						<a href="#" class="header__link">Готовая еда</a>
+						<a href="#" class="header__link">Собственное производство</a>
+						<a href="#" class="header__link">Овощи и фрукты</a>
+						<a href="#" class="header__link">Мясо</a>
+						<a href="#" class="header__link">Рыба</a>
+						<a href="#" class="header__link">Сыры</a>
+						<a href="#" class="header__link">Хлеб</a>
+						<a href="#" class="header__link">Акции</a>
+						<a href="#" class="header__link">Хиты продаж</a>
+						<a href="#" class="header__link">Новинки</a>
+						<a href="#" class="header__link">Акции</a>
+						<a href="#" class="header__link">Хиты продаж</a>
+						<a href="#" class="header__link">Новинки</a>
+						<a href="#" class="header__link">Сделано в Чеченской Республике</a>
+						<a href="#" class="header__link">Готовая еда</a>
+						<a href="#" class="header__link">Собственное производство</a>
+						<a href="#" class="header__link">Овощи и фрукты</a>
+						<a href="#" class="header__link">Мясо</a>
+						<a href="#" class="header__link">Рыба</a>
+						<a href="#" class="header__link">Сыры</a>
+					</div>
+					<button type="button" class="header__right"></button>
+				</div>				
+			</div>			
 		</header>
+		<div class="header__mobile">
+			<a href="/" class="header__logo-mobile"></a>
+			<form action="#" class="header__form-mobile">
+				<input class="header__form-input" type="search" name="search" id="search-mobile" placeholder="Поиск по сайту">
+				<button type="submit" class="header__submit"></button>
+			</form>
+			<button class="header__burger" aria-controls="primary-menu" aria-expanded="false">
+				<svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path class="burger-line line-1" d="M3.75 6H20.25" stroke="#EAF1F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					<path class="burger-line line-2" d="M3.75 12H20.25" stroke="#EAF1F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					<path class="burger-line line-3" d="M3.75 18H20.25"	stroke="#EAF1F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>            
+			</button>
+		</div>
 		<!-- header -->
 
 		<!-- main -->
 		<main>
-			
-			
+			<div class="mobile-type">
+				<a href="#" type="button" class="header__btn" id="delivery-mobile">
+					<span class="header__btn-icon"></span> 
+					<span class="header__btn-txt">Доставка</span>
+				</a>
+				<a href="#" type="button" class="header__btn" id="pickup-mobile">
+					<span class="header__btn-icon2"></span> 
+					<span class="header__btn-txt">Самовывоз</span>
+				</a>
+			</div>
+			<div class="container">
+				<nav class="breadcrumbs" aria-label="Хлебные крошки">
+					<ul itemscope itemtype="https://schema.org/BreadcrumbList">
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<a itemprop="item" href="/"><span itemprop="name">Главная</span></a>
+							<meta itemprop="position" content="1">
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<a itemprop="item" href="#"><span itemprop="name">Бренды</span></a>
+							<meta itemprop="position" content="2">
+						</li>
+					</ul>
+				</nav>				
+				<div class="return">
+					<a href="#" class="return__link">
+						<span class="return__link-icon"></span>
+						<span class="return__link-txt">Бренды</span>
+					</a>
+				</div> 
+			</div>
+			<setion class="slider-block">
+				<h2>Популярные бренды</h2>
+				<div class="slider__brand-wrap">
+					<div class="swiper slider__brand">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="slider__link">
+									<img src="assets/img/logo1.svg" alt="logo">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slider__link">
+									<img src="assets/img/logo2.svg" alt="logo">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slider__link">
+									<img src="assets/img/logo3.svg" alt="logo">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slider__link">
+									<img src="assets/img/logo4.svg" alt="logo">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slider__link">
+									<img src="assets/img/logo5.svg" alt="logo">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slider__link">
+									<img src="assets/img/logo6.svg" alt="logo">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slider__link">
+									<img src="assets/img/logo1.svg" alt="logo">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slider__link">
+									<img src="assets/img/logo2.svg" alt="logo">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slider__link">
+									<img src="assets/img/logo3.svg" alt="logo">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slider__link">
+									<img src="assets/img/logo4.svg" alt="logo">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slider__link">
+									<img src="assets/img/logo5.svg" alt="logo">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slider__link">
+									<img src="assets/img/logo6.svg" alt="logo">
+								</a>
+							</div>
+						</div>						
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</setion>
+			<section class="nav">
+				<div class="container">
+					<a href="#" class="nav__link">0-9</a>
+					<div class="nav__break"></div>					
+					<a href="#" class="nav__link active">А</a>
+					<a href="#" class="nav__link">Б</a>
+					<a href="#" class="nav__link">В</a>
+					<a href="#" class="nav__link">Г</a>
+					<a href="#" class="nav__link">Д</a>
+					<a href="#" class="nav__link">Е</a>
+					<a href="#" class="nav__link">Ё</a>
+					<a href="#" class="nav__link">Ж</a>
+					<a href="#" class="nav__link">З</a>
+					<a href="#" class="nav__link">И</a>
+					<a href="#" class="nav__link">Й</a>
+					<a href="#" class="nav__link">К</a>
+					<a href="#" class="nav__link">Л</a>
+					<a href="#" class="nav__link">М</a>
+					<a href="#" class="nav__link">Н</a>
+					<a href="#" class="nav__link">О</a>
+					<a href="#" class="nav__link">П</a>
+					<a href="#" class="nav__link">Р</a>
+					<a href="#" class="nav__link">С</a>
+					<a href="#" class="nav__link">Т</a>
+					<a href="#" class="nav__link">У</a>
+					<a href="#" class="nav__link">Ф</a>
+					<a href="#" class="nav__link">Х</a>
+					<a href="#" class="nav__link">Ц</a>
+					<a href="#" class="nav__link">Ш</a>
+					<a href="#" class="nav__link">Щ</a>
+					<a href="#" class="nav__link">Э</a>
+					<a href="#" class="nav__link">Ю</a>
+					<a href="#" class="nav__link">Я</a>
+					<div class="nav__break"></div>
+					<a href="#" class="nav__link nav__link--eng">A</a>
+					<a href="#" class="nav__link nav__link--eng">B</a>
+					<a href="#" class="nav__link nav__link--eng">C</a>
+					<a href="#" class="nav__link nav__link--eng">D</a>
+					<a href="#" class="nav__link nav__link--eng">E</a>
+					<a href="#" class="nav__link nav__link--eng">F</a>
+					<a href="#" class="nav__link nav__link--eng">G</a>
+					<a href="#" class="nav__link nav__link--eng">H</a>
+					<a href="#" class="nav__link nav__link--eng">I</a>
+					<a href="#" class="nav__link nav__link--eng">J</a>
+					<a href="#" class="nav__link nav__link--eng">K</a>
+					<a href="#" class="nav__link nav__link--eng">L</a>
+					<a href="#" class="nav__link nav__link--eng">M</a>
+					<a href="#" class="nav__link nav__link--eng">N</a>
+					<a href="#" class="nav__link nav__link--eng">O</a>
+					<a href="#" class="nav__link nav__link--eng">P</a>
+					<a href="#" class="nav__link nav__link--eng">Q</a>
+					<a href="#" class="nav__link nav__link--eng">R</a>
+					<a href="#" class="nav__link nav__link--eng">S</a>
+					<a href="#" class="nav__link nav__link--eng">T</a>
+					<a href="#" class="nav__link nav__link--eng">U</a>
+					<a href="#" class="nav__link nav__link--eng">V</a>
+					<a href="#" class="nav__link nav__link--eng">W</a>
+					<a href="#" class="nav__link nav__link--eng">X</a>
+					<a href="#" class="nav__link nav__link--eng">Y</a>
+					<a href="#" class="nav__link nav__link--eng">Z</a>
+				</div>
+			</section>
+			<section class="brands">
+				<div class="container">
+					<h1>А</h1>
+					<div class="brands__items">
+						<a href="#" class="brand__item">Аппетит</a>
+						<a href="#" class="brand__item">Ароматный Двор</a>
+						<a href="#" class="brand__item">Авантаж Кухня</a>
+						<a href="#" class="brand__item">Арт-Ланч</a>
+						<a href="#" class="brand__item">Аксиома Вкуса</a>
+						<a href="#" class="brand__item">Аврора Меню</a>
+						<a href="#" class="brand__item">Алеронт</a>
+						<a href="#" class="brand__item">Антарес Готовое</a>
+						<a href="#" class="brand__item">Айсберг Салат</a>
+						<a href="#" class="brand__item">Аллегро Ланч</a>
+						<a href="#" class="brand__item">Аперитив Бокс</a>
+						<a href="#" class="brand__item">Арена Вкуса</a>
+						<a href="#" class="brand__item">Аспект Готовое</a>
+						<a href="#" class="brand__item">Алдекс</a>
+						<a href="#" class="brand__item">Аура Блюд</a>
+						<a href="#" class="brand__item">Анкорс</a>
+						<a href="#" class="brand__item">Амстердам Булка</a>
+						<a href="#" class="brand__item">Аризона Молочка</a>
+						<a href="#" class="brand__item">Астра Творог</a>
+						<a href="#" class="brand__item">Афина Творожок</a>
+						<a href="#" class="brand__item">Аллегро Сладость</a>
+						<a href="#" class="brand__item">Альпийский Родник</a>
+						<a href="#" class="brand__item">Амурский Родник</a>
+						<a href="#" class="brand__item">Апрель Фреш</a>
+						<a href="#" class="brand__item">Аверон</a>
+						<a href="#" class="brand__item">Альпина Паста</a>
+						<a href="#" class="brand__item">Арктика Бакалея</a>
+						<a href="#" class="brand__item">Амрил</a>
+						<a href="#" class="brand__item">Аспект Паста</a>
+						<a href="#" class="brand__item">Айс Чипс</a>
+						<a href="#" class="brand__item">Альпина Чипсы</a>
+						<a href="#" class="brand__item">Аполлон Снек</a>
+						<a href="#" class="brand__item">Арнокс</a>
+						<a href="#" class="brand__item">Аллегро Сладость</a>
+						<a href="#" class="brand__item">Альпийский Родник</a>
+						<a href="#" class="brand__item">Амурский Родник</a>
+						<a href="#" class="brand__item">Апрель Фреш</a>
+						<a href="#" class="brand__item">Аверон</a>
+						<a href="#" class="brand__item">Альпина Паста</a>
+						<a href="#" class="brand__item">Арктика Бакалея</a>
+						<a href="#" class="brand__item">Амрил</a>
+						<a href="#" class="brand__item">Аспект Паста</a>
+						<a href="#" class="brand__item">Айс Чипс</a>
+						<a href="#" class="brand__item">Альпина Чипсы</a>
+						<a href="#" class="brand__item">Аполлон Снек</a>
+						<a href="#" class="brand__item">Арнокс</a>
+						<a href="#" class="brand__item">Аура Снек</a>
+						<a href="#" class="brand__item">Агро-Эко</a>
+						<a href="#" class="brand__item">Альпина Органик</a>
+						<a href="#" class="brand__item">Антей Органик</a>
+						<a href="#" class="brand__item">Астра Эко</a>
+						<a href="#" class="brand__item">Атлант Органик</a>
+						<a href="#" class="brand__item">Афина Органик</a>
+						<a href="#" class="brand__item">Аппетит</a>
+						<a href="#" class="brand__item">Ароматный Двор</a>
+						<a href="#" class="brand__item">Авантаж Кухня</a>
+						<a href="#" class="brand__item">Арт-Ланч</a>
+						<a href="#" class="brand__item">Аксиома Вкуса</a>
+						<a href="#" class="brand__item">Аврора Меню</a>
+						<a href="#" class="brand__item">Алеронт</a>
+						<a href="#" class="brand__item">Антарес Готовое</a>
+						<a href="#" class="brand__item">Айсберг Салат</a>
+						<a href="#" class="brand__item">Аллегро Ланч</a>
+						<a href="#" class="brand__item">Аперитив Бокс</a>
+						<a href="#" class="brand__item">Арена Вкуса</a>
+						<a href="#" class="brand__item">Аспект Готовое</a>
+						<a href="#" class="brand__item">Антей Кот</a>
+						<a href="#" class="brand__item">Арктика Зоо</a>
+						<a href="#" class="brand__item">Аура Питомец</a>
+						<a href="#" class="brand__item">Арлекс</a>
+						<a href="#" class="brand__item">Алтрекс</a>
+						<a href="#" class="brand__item">Асвекс</a>
+						<a href="#" class="brand__item">Аслекс</a>
+						<a href="#" class="brand__item">Аладдин</a>
+						<a href="#" class="brand__item">Альба</a>
+						<a href="#" class="brand__item">Айс Кофе</a>
+						<a href="#" class="brand__item">Альпина Чай</a>
+						<a href="#" class="brand__item">Амазонка Кофе</a>
+						<a href="#" class="brand__item">Аснорм</a>
+						<a href="#" class="brand__item">Асфикс</a>
+						<a href="#" class="brand__item">Атвил</a>
+						<a href="#" class="brand__item">Асгор</a>
+						<a href="#" class="brand__item">Арфикс</a>
+					</div>
+				</div>
+			</section>
 		</main>
 		<!-- main -->
 
 		<!-- footer -->
-		<footer>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="footer__left">
+						<a href="#" class="footer__logo"></a>
+						<div class="footer__links">
+							<a href="#" class="footer__link">Каталог</a>
+							<a href="#" class="footer__link">Политика обработки ПДн</a>
+							<a href="#" class="footer__link">Акции</a>
+							<a href="#" class="footer__link">Горячая линия</a>
+							<a href="#" class="footer__link">Мои бонусы</a>
+							<a href="#" class="footer__link">Правовая информация</a>
+							<a href="#" class="footer__link">Оплата и доставка</a>
+							<a href="#" class="footer__link">Вакансии</a>
+							<a href="#" class="footer__link">Укажите способ получения</a>
+							<a href="#" class="footer__link">О компании</a>
+						</div>
+						<div class="footer__wrap">
+							<a href="#" class="footer__download app-store">
+								<span class="footer__download-icon"></span>
+								<span class="footer__download-txt">Загрузите в App Store</span>
+							</a>
+							<a href="#" class="footer__download google-play">
+								<span class="footer__download-icon"></span>
+								<span class="footer__download-txt">Доступно в Google Play</span>
+							</a>
+							<a href="#" class="footer__download ru-store">
+								<span class="footer__download-icon"></span>
+								<span class="footer__download-txt">Загрузите в RuStore</span>
+							</a>
+						</div>
+					</div>
+					<div class="footer__right">
+						<div class="footer__subscribe">
+							<a href="#" class="footer__subscribe-link">Будьте в курсе выгодных предложений</a>
+							<div class="footer__subscribe-txt">Подпишитесь на рассылку и первыми узнавайте об акциях, скидках и новинках.</div>
+						</div>
+						<div class="footer__info-item">
+							<div class="footer__info-heading">Телефон:</div>
+							<a href="tel:+78712224488" class="footer__info-link">+7 8712 22-44-88</a>
+						</div>
+						<div class="footer__info-item">
+							<div class="footer__info-heading">E-mail:</div>
+							<a href="mailto:info@vkusdom.ru" class="footer__info-link">info@vkusdom.ru</a>
+						</div>
+						<div class="footer__info-item">
+							<div class="footer__info-heading">Адрес:</div>
+							<div class="footer__info-txt">364024, Чеченская Республика, г. Грозный, проспект А.А. Кадырова, 115</div>
+						</div>
+						<div class="footer__info-item">
+							<div class="footer__info-heading">График работы:</div>
+							<div class="footer__info-txt">Ежедневно с 08:00 до 23:00</div>
+						</div>
+						<div class="footer__social-links">
+							<a href="#" class="footer__social-link vk">
+								<span></span>
+							</a>
+							<a href="#" class="footer__social-link max">
+								<span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__bottom-txt">©2026. Официальный сайт сети «Вкусдом» — доставка продуктов на дом</div>
+					<a href="#" class="footer__policy">Политика конфиденциальности</a>
+				</div>
+			</div>
 		</footer>
 		<!-- footer -->
+
+		<!-- scripts -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="assets/js/layout.js" ></script>
 	</body>    
